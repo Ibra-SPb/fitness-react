@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+/* обнуление шрифтов tailwind */
+@theme {
+  --font-*: initial;
+  --font-montserrat: 'Montserrat", "serif';
+}
+
+html,
+body,
+#root,
+.app {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: var(--font-montserrat);
+  scroll-behavior: smooth;
+}
